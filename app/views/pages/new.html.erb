@@ -1,0 +1,18 @@
+    
+<div class="booyah-box col-10 offset-1">
+  <button class="btn btn-sm btn-bootstrap" data-fill="bootstrap" data-tooltip title="Fill form with valid data">Fill</button>
+    <%= simple_form_for @address do |f| %>
+     <%= f.error_notification %>
+      
+      <%= f.input :street %>
+
+      <%= f.input :city %>
+
+      <%= f.input :state %>
+
+      <%= f.input :zip %>
+
+      <%= f.button :submit, class: "btn-primary" %>
+      <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
+    <% end %>
+</div>

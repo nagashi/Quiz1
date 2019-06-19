@@ -61,3 +61,13 @@ li {
     clear: both;
 }
 
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+li a:hover { 
+  background-color: #555;
+  color: white;
+}

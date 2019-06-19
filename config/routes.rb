@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'pages#home'
+  root 'pages#home'
+  resources :addresses, only: [:new, :create, :index]
 end
